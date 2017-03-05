@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - npm install time
+      - npm install
       - aws cloudformation package --template-file sonos-lambda.yaml --s3-bucket abechosonos 
                                    --output-template-file NewSamTemplate.yaml
 artifacts:
