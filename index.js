@@ -6,7 +6,7 @@ var AWS = require('aws-sdk');
 var sonosProxy = null;
 var dynamodb = null;
 
-var options = require('./options');
+var options = require('./options.example.js');
 var defaultMusicService = ((options.defaultMusicService !== undefined) && (options.defaultMusicService > '')) ? options.defaultMusicService : 'presets';
 var defaultRoom = (options.defaultRoom !== undefined) ? options.defaultRoom : '';
 
